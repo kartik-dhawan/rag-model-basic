@@ -83,6 +83,7 @@ rag-model-basic/
 
 3. **Ensure document files are in the correct location**:
    The PDF files should be in the `docs/` directory inside `rag-model-basic`:
+
    ```
    rag-model-basic/
    ├── docs/
@@ -92,6 +93,8 @@ rag-model-basic/
    ├── src/
    └── ...
    ```
+
+   **To test with your own documents**: Simply add PDF files to the `docs/` directory inside the `rag-model-basic` root folder. The system will automatically load all PDF files from this directory when it starts up. After adding new documents, restart the server to process them.
 
 ## Usage
 
@@ -138,6 +141,26 @@ query {
   }
 }
 ```
+
+### Testing with Your Own Documents
+
+To test the system with your own documents, simply add PDF files to the `docs/` directory inside the `rag-model-basic` root folder:
+
+```
+rag-model-basic/
+├── docs/
+│   ├── your-document-1.pdf
+│   ├── your-document-2.pdf
+│   └── ...
+```
+
+After adding new documents, restart the server to process them. The system will automatically:
+
+- Load all PDF files from the `docs/` directory
+- Process and index them for searching
+- Make them available for question answering
+
+**Note**: The system processes all PDF files in the `docs/` directory on startup, so make sure to place only the documents you want to query.
 
 ### Sample Questions to Test
 
