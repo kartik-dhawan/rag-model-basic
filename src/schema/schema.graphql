@@ -1,0 +1,9 @@
+type Query {
+  askQuestion(question: String!): Answer!
+}
+
+type Answer {
+  answer: String!
+  sources: [String!]
+}
+

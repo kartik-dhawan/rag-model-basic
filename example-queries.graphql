@@ -1,0 +1,42 @@
+# Example GraphQL queries for testing the RAG system
+
+# Query 1: Main components of RAG model
+query {
+  askQuestion(question: "What are the main components of a RAG model, and how do they interact?") {
+    answer
+    sources
+  }
+}
+
+# Query 2: Transformer encoder sub-layers
+query {
+  askQuestion(question: "What are the two sub-layers in each encoder layer of the Transformer model?") {
+    answer
+    sources
+  }
+}
+
+# Query 3: Positional encoding
+query {
+  askQuestion(question: "Explain how positional encoding is implemented in Transformers and why it is necessary.") {
+    answer
+    sources
+  }
+}
+
+# Query 4: Multi-head attention
+query {
+  askQuestion(question: "Describe the concept of multi-head attention in the Transformer architecture. Why is it beneficial?") {
+    answer
+    sources
+  }
+}
+
+# Query 5: Few-shot learning
+query {
+  askQuestion(question: "What is few-shot learning, and how does GPT-3 implement it during inference?") {
+    answer
+    sources
+  }
+}
+
